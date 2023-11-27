@@ -1,0 +1,171 @@
+
+
+body {
+    margin: 0;
+    padding: 0%;
+    font-family: Arial, sans-serif;
+    
+      background-color: #808080; 
+  
+  
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+
+  nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .btn {
+    display: none;
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  .menu a {
+    margin-left: 20px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .btn {
+      display: block;
+      cursor: pointer;
+      position: relative;
+      width: 30px;
+      height: 22.5px;
+      margin-right: 20px;
+    }
+  
+    .btn span {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2.5px;
+      background-color: #000;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .btn span:nth-child(1) {
+      top: 0;
+    }
+  
+    .btn span:nth-child(2) {
+      top: calc(50% - 1.25px);
+    }
+  
+    .btn span:nth-child(3) {
+      bottom: 0;
+    }
+  
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      z-index: 1;
+    }
+  
+    .menu.show {
+      display: flex;
+    }
+  
+    .menu a {
+      margin-bottom: 10px;
+      font-size: 18px;
+      text-align: center;
+      color: #000;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+ 
+  
+  header {
+    
+  }
+  
+  h1 {
+    color: #040303;
+    font-size: 60px;
+    text-align: center;
+    margin-top: calc(50vh - (60px / 2));
+  }
+  
+
+  
+  section {
+    padding: 80px;
+  }
+  
+  h2 {
+    font-size: 36px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  .character-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  }
+  
+  .character-gallery img {
+     width:100%;
+     height:auto
+  }
+
+  
+  form label {
+     display:block
+  }
+  
+  form input[type="text"], form input[type="email"], form textarea{
+     width:100%;
+     padding:.5rem
+  }
+  
+  form button[type="submit"]{
+     background-color:#000;
+     color:#fff;
+     border:none;
+     padding:.5rem
+  }
+ 
+  
+  footer {
+     background-color:#000;
+     color:#fff;
+     padding:.5rem
+  }
+  
+  .social-icons a{
+     color:#fff;
+     margin-right:.5rem
+  }
+  
